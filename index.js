@@ -18,7 +18,8 @@ const PORT = process.env.PORT || 8000;
 const MONGODB_URI = process.env.MONGODB_URI;
 
 // Connect to MongoDB
-connectToDB(MONGODB_URI);
+connectToDB(MONGODB_URI).then(()=>{
+    console.log("✅ MongoDB Connection Established");
 
 // Set up view engine
 app.set('view engine', 'ejs');
@@ -47,4 +48,8 @@ app.get('/url/:shortId', handleRedirectToOriginalURL);
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
+});
+
+}).catch(error => {
+    console.error("❌ Failed to connect to MongoDB:", error);
 });
