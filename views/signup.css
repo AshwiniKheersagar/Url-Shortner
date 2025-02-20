@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to left, #d279a5, #5b74b7);
+}
+
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Sign Up Box */
+.signup-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Ensures vertical centering */
+}
+
+/* Heading */
+h1 {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Ensures inputs take full width */
+    gap: 15px; /* Adds space between inputs */
+    align-items: center;
+}
+
+/* Input Fields */
+.signup-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 16px; /*Ensures text starts from left */
+}
+
+.signup-box input::placeholder {
+    color: #ddd;
+}
+/* Sign Up Button */
+.signup-btn {
+    width: 90%;
+    padding: 12px;
+    background-color: #ec4899;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup-btn:hover {
+    background-color: #db2777;
+}
+
+
+/* Login Link */
+.login-link {
+    color: white;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center; /* Ensures text is centered */
+}
+
+.login-link a {
+    color: #93c5fd;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h1>Login</h1>
+
+            <form action="/user/login" method="POST">
+                <!-- Email Input -->
+                <input type="email" name="email" placeholder="Email" required>
+
+                <!-- Password Input -->
+                <input type="password" name="password" placeholder="Password" required>
+
+                <!-- Remember Me & Forgot Password -->
+                <div class="remember-forgot">
+                    <label class="check">
+                        <input type="checkbox" name="remember"> Remember Me
+                    </label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+
+                <!-- Login Button -->
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+
+            <!-- Signup Link -->
+            <div class="signup-link">
+                Not a member? <a href="/signup">Sign Up</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
